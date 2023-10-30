@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/person_male" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello, Asep"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+
+
+    <!-- Item menu pertama -->
+    <LinearLayout
+        android:id="@+id/menu1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:background="#FFFFFF"
+        android:layout_marginBottom="8dp">
+
+        <!-- Gambar makanan -->
+        <ImageView
+            android:layout_width="96dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/pizza" />
+
+        <!-- Nama makanan dan deskripsi -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:layout_marginStart="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pepperoni Pizza"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/coklat" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cocok bagi anda yang ingin merasakan pizza original dengan taburan keju dan daging asap yang lezat"
+                android:textColor="@color/coklat" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Item menu kedua (sama seperti item pertama) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:background="#FFFFFF"
+        android:layout_marginBottom="8dp">
+
+        <ImageView
+            android:layout_width="96dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/spageti" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:layout_marginStart="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Spaghetti"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/coklat" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cocok bagi anda yang ingin merasakan spaghetti original dengan bumbu yang oriental"
+                android:textColor="@color/coklat" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Item menu ketiga -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:background="#FFFFFF"
+        android:layout_marginBottom="8dp">
+
+        <ImageView
+            android:layout_width="96dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/burger" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:layout_marginStart="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Burger"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/coklat" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cocok bagi Anda yang ingin merasakan kelembutan burger berlapiskan keju, sayuran, dan daging yang tebal"
+                android:textColor="@color/coklat" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Item menu keempat -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:background="#FFFFFF"
+        android:layout_marginBottom="8dp">
+
+        <ImageView
+            android:layout_width="96dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/steak"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:layout_marginStart="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Steak"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/coklat"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="Cocok bagi Anda yang ingin merasakan lezatnya daging steak dipadukan dengan kentang yang lezat"
+                android:textColor="@color/coklat" />
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:background="@drawable/plus_button"
+        android:text="+"
+        android:textSize="32sp"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp" />
+
+
+
+</LinearLayout>

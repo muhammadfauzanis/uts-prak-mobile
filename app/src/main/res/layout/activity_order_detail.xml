@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingVertical="32dp"
+    android:paddingHorizontal="44dp">
+
+    <!-- Kontainer Order Detail -->
+    <LinearLayout
+        android:id="@+id/orderDetailContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Order Detail"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/coklat"
+            />
+
+        <!-- Nama Pemesan -->
+        <TextView
+            android:id="@+id/orderName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Asep"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"
+            />
+
+        <!-- Store -->
+        <TextView
+            android:id="@+id/orderStore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Store: Cihampelas"
+            android:textSize="18sp"
+         />
+
+        <!-- Deskripsi Singkat -->
+        <TextView
+            android:id="@+id/orderDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pizza sudah dipesan."
+            android:textSize="16sp"
+          />
+
+    </LinearLayout>
+
+    <!-- Checkbox for Pengiriman -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/orderDetailContainer"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pengiriman"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/coklat"
+            />
+
+        <CheckBox
+            android:id="@+id/checkBoxAmbilSendiri"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ambil Sendiri"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/checkBoxFastDelivery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fast Delivery(minimal 30 menit sampai)"
+            android:textSize="16sp"
+          />
+    </LinearLayout>
+
+    <!-- Button "Done" -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/orderDetailContainer"
+        android:layout_marginTop="96dp">
+
+        <Button
+            android:id="@+id/buttonDone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Done"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="@color/orange"
+            app:cornerRadius="5dp"
+            android:layout_below="@id/checkBoxFastDelivery"
+            android:layout_marginTop="96dp" />
+    </LinearLayout>
+
+
+</RelativeLayout>
